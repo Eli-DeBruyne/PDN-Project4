@@ -1,0 +1,17 @@
+The rand() and curand() functions will NOT produce
+the same random values for the same seed and file. 
+So, please use the files:
+
+	1) cpu_nonce_files
+		If you ARE NOT generating your nonces
+		on the GPU.
+
+	2) gpu_nonce_files
+		If you ARE generating your nonces
+		on the GPU.
+
+The "debug_1k.csv" is a file with 1,000 transactions.
+It is meant for you to quickly debug your program.
+
+The "in_20k.csv" is a file with 20,000 transactions.
+You should use this in your report.
